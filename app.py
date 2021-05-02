@@ -17,6 +17,7 @@ travel_advisories_df = pd.read_csv('covid19TravelRestrictionsCountry.csv')
 
 # Initialise the app
 app = dash.Dash(__name__)
+server =app.server
 
 # figure containing choropleth map
 fig = go.Figure(data=go.Choropleth(
